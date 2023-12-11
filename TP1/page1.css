@@ -1,0 +1,16 @@
+h1 {
+    color : blue;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    background-color: purple;
+    text-align:end;
+}
+
+body {
+    background-color: gray;
+    color: white;
+}
