@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Exo 2</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <div id="text">
+        0
+    </div>
+
+    <script>
+        let timeout
+        i = 0
+
+        setInterval(afficher, 2000);
+        let myDiv = document.getElementById("text");
+
+        function afficher() {
+            
+            i = i+1;               
+            myDiv.innerHTML = 2*i;
+
+  
+        }
+    </script>
+    
+    </html>
