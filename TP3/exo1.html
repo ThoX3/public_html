@@ -8,20 +8,14 @@
         <h1>Exercice 1</h1>
         <p>Wait 4 seconds for alert</p>
 
-        window.alert("Hello world!");
-        alert("Hello world!");
-
-
         <body>
         <script>
         let timeout;
 
-        function alert() {
-            timeout = setTimeout(alertFunc, 4000);
-        }
-
+        setTimeout(alertFunc, 4000);
+        
         function alertFunc() {
-            alert("Réveillez-vous")
+            alert("Réveillez-vous !");
         }
         </script>
         </body>
