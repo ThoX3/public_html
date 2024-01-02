@@ -40,5 +40,9 @@ article > h1 {
 	color : grey;
 }
 
+footer > a {
+	margin : 0 15px 0 0;
+	color : blue;
+}
 
 
