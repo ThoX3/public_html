@@ -40,10 +40,13 @@ article > h1 {
 	color : grey;
 }
 
+footer {
+	text-align : center;
+}
+
 footer > a {
 	margin : 0 15px 0 0;
 	color : blue;
-	text-align : center;
 }
 
 
