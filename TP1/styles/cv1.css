@@ -1,0 +1,44 @@
+header {
+	border-style : solid;
+	border-radius : 10px;
+	background-color : gray;
+	color : white;
+	text-align : center;
+	margin : 0 0 20px 0;
+}
+
+header > h1 {
+	font-family : "Verdana";
+}
+
+header > h2 {
+	font-size : 16px;
+	font-weight : normal; 
+}
+
+section {
+	margin : 0 0 30px 0;
+	border-style : solid;
+	border-radius : 20px;
+}
+
+section > h1 {
+	margin : 5px 0 20px 40px;
+	font-family : "Verdana";
+	font-size : 26px;
+}
+
+section > h2 {
+	margin : 0 0 10px 60px;
+	font-size : 18px;
+	font-weight : normal;
+}
+
+article > h1 {
+	margin : 0 0 0 40px;
+	font-size : 12px;
+	color : grey;
+}
+
+
+
