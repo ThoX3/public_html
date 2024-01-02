@@ -43,6 +43,7 @@ article > h1 {
 footer > a {
 	margin : 0 15px 0 0;
 	color : blue;
+	text-align : center;
 }
 
 
