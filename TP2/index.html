@@ -32,7 +32,6 @@
 				display: table-row;
 			}
 			
-			/* Tout bouton du menu */
 			header > nav > div > a.button2 {
 			    background-color: #4CAF50; /* Green */
 			    color: white;
@@ -46,10 +45,6 @@
 			    font-size: 1.2em;
 				border-radius: 10px;
 				box-shadow: 4px 4px 4px gray, -4px 4px 4px gray;
-
-				 /* ------------------------------------------------------- */
-				 /* Question A: transition  et pointeur */			    
-			   
 			}
 			
 			header > nav > div > a.button3 {
@@ -65,10 +60,6 @@
 			    font-size: 1.2em;
 				border-radius: 10px;
 				box-shadow: 4px 4px 4px gray, -4px 4px 4px gray;
-
-				 /* ------------------------------------------------------- */
-				 /* Question A: transition  et pointeur */			    
-			   
 			}
 
 			header > nav > div > a.button4 {
@@ -84,14 +75,10 @@
 			    font-size: 1.2em;
 				border-radius: 10px;
 				box-shadow: 4px 4px 4px gray, -4px 4px 4px gray;
-
-				 /* ------------------------------------------------------- */
-				 /* Question A: transition  et pointeur */			    
-			   
 			}
 
 			header > nav > div > a.button5 {
-			    background-color: #e7e7e7; /* Green */
+			    background-color: #e7e7e7; 
 			    color: black;
 			    padding: 16px 32px;
 			    text-align: center;
@@ -99,17 +86,12 @@
 			    display: table-cell;
 			    border-style: solid;
 				 border-width: 1px;
-				 border-color: #e7e7e7; /* Green */
+				 border-color: #e7e7e7;
 			    font-size: 1.2em;
 				border-radius: 10px;
 				box-shadow: 4px 4px 4px gray, -4px 4px 4px gray;
-
-				 /* ------------------------------------------------------- */
-				 /* Question A: transition  et pointeur */			    
-			   
 			}
 
-			/* Question A : Transition */
 			header > nav > div > a.button2:hover {
 				background-color: white;
 				color: #4CAF50;
@@ -158,31 +140,46 @@
 
 			}
 
+			a:hover .button-content {
+ 				transform: translateX(-5px);
+			}
+
 			span::after {
 				content: "»";
-				padding-left: 3px;
+				padding-left: 5px;
 				position: absolute;
 				opacity: 0%;
+				transition-duration: 0.5s;
 			}
 
 			a:hover span::after {
-				text-align: center;
 				opacity: 100%;
+				transition-duration: 0.5s;
 			}
 
 		</style>
 	</head>
 	<body>
 		<header>
-			<h1>HTML-CSS TP3</h1>
+			<h1>HTML-CSS TP2</h1>
 			<nav id="menu">
 				<div>
-					<a href="exo2.html" class="button2">Exo 2<span></span></a>
-					<a href="exo3.html" class="button3">Exo 3<span></span></a>
+					<a href="exo2.html" class="button2">
+						<div class="button-content">Exo 2<span></span></div>
+					</a>
+					
+					<a href="exo3.html" class="button3">
+						<div class="button-content">Exo 3<span></span></div>
+					</a>
 				</div>
 				<div>
-					<a href="exo4.html" class="button4">Exo 4<span></span></a>
-					<a href="exo5.html" class="button5">Exo 5<span></span></a>
+					<a href="exo4.html" class="button4">
+						<div class="button-content">Exo 4<span></span></div>
+					</a>
+
+					<a href="exo5.html" class="button5">
+						<div class="button-content">Exo 5<span></span></div>
+					</a>
 				</div>
 			</nav>
 		</header>
