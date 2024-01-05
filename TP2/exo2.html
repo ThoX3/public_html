@@ -79,8 +79,45 @@
 			/* ------------------------------------------------------------- */
 			/* aside  A compléter */
 			aside {
+				position: fixed;
+				top : calc(25% + 50px);
+				height: 100px;
+				font-weight: bold;
 			}
-			
+
+			aside > div {
+				position: fixed;
+				left: -20px;
+				background-color: #4CAF50;
+				text-align: right;
+				color: white;
+				padding: 6px 16px;
+				border-radius: 20px;
+				opacity: 100%;
+				width: 50px;
+			}
+
+			aside > nav > a {
+				display: block;
+				margin-bottom : 1px;
+				text-align: center;
+				background-color: #4CAF50;
+				border-radius : 5px;
+				color: white;
+				opacity: 0%;
+				width: 85px;
+				text-decoration: none;
+			}
+
+			aside:hover > nav > a {
+				opacity: 100%;
+			}
+
+			aside:hover > div {
+  				opacity: 0;
+			}
+
+
 			/* -----------------------------------------------*/
 			/* Images */
 			#images {
@@ -97,6 +134,20 @@
 				position: absolute;
 				left: 0;
 			}
+			
+			#images img:nth-child(1) {
+ 				opacity: 0;
+			}		
+			
+			#images:hover img:nth-child(1) {
+				opacity: 1;
+			}
+
+			#images:hover img:nth-child(2) {
+				opacity: 0;
+			}
+
+
 			/* A compléter */
 			
 			
@@ -106,13 +157,13 @@
 		<header>
 			<h1 class="menuitem">TP3</h1>
 			<nav class="menuitem">
-				<a href="index.html"><img src="images/home.png" alt="Accueil"/></a><a href="exo2.html" style="background-color:white; color:#4CAF50;">Exo2</a><a href="exo3.html">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
+				<a href="index.html">Accueil</a><a href="exo2.html" style="background-color:white; color:#4CAF50;">Exo2</a><a href="exo3.html">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
 			</nav>
 		</header>
 		<aside>
 			<div>»</div>
 			<nav>
-				<a href="index.html"><img src="images/home.png" alt="Accueil"/></a><a href="exo2.html">Exo2</a><a href="exo3.html">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
+				<a href="index.html">Accueil</a><a href="exo2.html">Exo2</a><a href="exo3.html">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
 			</nav>
 		</aside>
 		<section>
