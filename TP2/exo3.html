@@ -78,6 +78,7 @@
 				border: 2px solid #F44336;
 				height: 250px;
 				margin-top: 1em;
+				transition-duration: 2s;
 			}
 			
 			section > div.transbut {
@@ -99,20 +100,41 @@
 			/* -----------------------------------------------*/
 			/* Image Transformations */
 			
+			#Translation:active ~ img {
+				transform: translate(200px, 0px);
+			}
+
+			#Scaling:active ~ img {
+				transform: scale(0.6,0.6);
+			}
+
+			#Rotation:active ~ img {
+				transform: rotate(0.04turn);
+			}
+
+			#Combinaison:active ~ img {
+				transform: rotate(0.04turn) translate(200px, 0px) scale(0.6, 0.6);	
+			}
 			
-			
+			img:hover {
+				transform: scale(1.2,1.2);
+			}
+
 		</style>
 	</head>
 	<body>
 		<header style="background-color:#F44336;">
 			<h1 class="menuitem">TP3</h1>
 			<nav class="menuitem">
-				<a href="index.html"><img src="images/home.png" alt="Accueil"/></a><a href="exo2.html">Exo2</a><a href="exo3.html" style="background-color:white; color:#F44336;">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
+				<a href="index.html">Accueil</a><a href="exo2.html">Exo2</a><a href="exo3.html" style="background-color:white; color:#F44336;">Exo3</a><a href="exo4.html">Exo4</a><a href="exo5.html">Exo5</a>
 			</nav>
 		</header>
 		<section>
 			<h2>Transformations</h2>
-			<div class="transbut">Translation</div><div class="transbut">Scaling</div><div class="transbut">Rotation</div><div class="transbut">Combinaison</div>
+			<div class="transbut" id="Translation">Translation</div>
+			<div class="transbut" id="Scaling">Scaling</div>
+			<div class="transbut" id="Rotation">Rotation</div>
+			<div class="transbut" id="Combinaison">Combinaison</div>
 			<img src="images/merg.jpg" alt="Mer grise"/>
 		</section>
 	</body>
