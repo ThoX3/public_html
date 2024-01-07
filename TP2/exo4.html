@@ -84,9 +84,23 @@
 			}
 			
 			/* -----------------------------------------------*/
-			/* A compléter ne pas modifier le code ci-dessus ni le HTML */
-			
-			
+			section > div {
+				transform: scale(0.3,0.3) translate(-180px, -1200px);
+				opacity: 0;
+			}
+
+			section > div > div {
+				color: #008CBA;
+				font-size: 68px;
+				font-weight: bold;
+				font-family: monospace;
+				transform: translate(-30px,-190px);
+			}
+		
+			section > img:hover ~ div {
+				opacity: 1;
+				transition-duration: 2s;
+			}
 				
 		</style>
 	</head>
